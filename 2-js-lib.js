@@ -4,7 +4,7 @@ var lib = {
   hForm : null, hID : null, hCode : null, // html elements
   hTitle : null, hAuthor : null, hLoc : null, hList : null,
   init : () => {
-    // (A1) IDB SUPPORT CHECK
+    // (A1) IDB SUPPORT CHECK   
     window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
     if (!window.indexedDB) {
       alert("Your browser does not support indexed database.");
